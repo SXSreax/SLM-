@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/pages/room.css') }}"
+    />
+  </head>
+  <body>
+    <div class="room-container">
+      <div class="room-code" style="text-align: center; margin-top: 30px">
+        <h2 style="font-size: 2.5em; letter-spacing: 0.2em">{{ room_code }}</h2>
+      </div>
+      <h1>Your Room Code</h1>
+      <a href="/" class="button">Back to Home</a>
+    </div>
+  </body>
+</html>

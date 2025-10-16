@@ -6,5 +6,5 @@ room_bp = Blueprint('room', __name__)
 
 @room_bp.route('/room')
 def room():
-    code = ''.join(random.choices(string.ascii_letters, k=8))
-    return render_template('room.html', code=code)
+    room_code = ''.join(random.choices(string.ascii_letters + string.digits, k=6))
+    return render_template('pages/room.html', room_code=room_code)
