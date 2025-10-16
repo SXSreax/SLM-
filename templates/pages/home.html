@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game Room | Home</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/pages/home.css') }}"
+    />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <div class="glass-card">
+        <h1>欢迎来到游戏房间</h1>
+        <div class="actions">
+          <a href="/room" class="btn">Create Room</a>
+          <form action="/room/join" method="post" class="join-form">
+            <input
+              type="text"
+              name="code"
+              placeholder="Enter code"
+              maxlength="8"
+              required
+            />
+            <button type="submit" class="btn">Join Room</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
